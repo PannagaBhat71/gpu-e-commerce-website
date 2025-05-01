@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=shopping_cart_checkout" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--hamburger menu-->
+   <header class="header">
+    <nav class="nav-container">
+    <ul class="nav-list-main">
+ <li class="nav-list"> <a href="#" class="nav-anchor"> quantum</a> </li>
+ <li class="nav-list"> <a href="#" class="nav-anchor"> Home</a> </li>
+ <li class="nav-list"> <a href="contact.html" class="nav-anchor"> About</a> </li>
+ <li class="nav-list"> <a href="contact.html" class="nav-anchor"> Contact</a> </li>
+ 
+    </ul>
+    <button onclick="ham()" class="hamburger"> 
+        
+            menu
+            
+     </button>
+</nav>
+<div class="block">
+<div class="ham-click"> <a href="#" class="ham-text"> Home</a></div>
+<div class="ham-click"> <a href="contact.html" class="ham-text"> about</a></div>
+<div class="ham-click"> <a href="contact.html" class="ham-text"> Contact</a></div>
+</div>
+   </header>    
+   <div class="cart-container">
+    <button class="cart" onclick="trolley()"> 
+        <span class="material-symbols-outlined">
+            shopping_cart_checkout
+            </span>
+    </button>
+    
+   </div>
+   <div class="basket-container">
+    <div class="basket">
+        <div class="totalcontainer">
+       <h1 class="total"> </h1>
+       </div>
+       
+    </div>
+    
+   </div>
+   
+   <br>
+   <!--hambergur menu end-->
+
+<!--search bar-->
+<div class="search-div">
+<input id="search" type="text" placeholder="search...">
+</div>
+
+
+<!--slider-->
+<br>
+<br>
+<div class="adjuster">
+<div class="slider">
+    <div class="slides">
+        <img class="slide" src="rtx 3090.png">
+        <img class="slide" src="rtx 3060.jpg">
+        <img class="slide" src="rx 7500.jpg">
+        <img class="slide" src="rx 6600.jpg">
+    </div>
+    <div class="controls">
+        <button id="prev"> &#10094;</button>
+        <button id="next"> &#10095;</button>
+    </div>
+</div>
+</div>
+<br>
+<!--slider end-->
+   
+<div class="item-container">
+    <div class="container">
+    <div class="item" item-name="rtx 3090">
+        <img src="rtx 3090.jpg" class="item-images">
+        <p class="item-text"> rtx 3090</p>
+        <p class="item-text"> price: 80,000</p>
+        <button class="add-to-cart" price="80000" value="rtx 3090"> add to cart</button>
+    </div>
+    <div class="item" item-name="rtx 3080">
+        <img src="rtx 3080.jpg" class="item-images">
+        <p class="item-text"> rtx 3080</p>
+        <p class="item-text"> price: 65000</p>
+        <button class="add-to-cart" price="65000" value="rtx 3080"> add to cart</button>
+    </div>
+    <div class="item" item-name="rtx 3060"> 
+        <img src="rtx 3060.jpg" class="item-images">
+        <p class="item-text"> rtx 3060</p>
+        <p class="item-text"> price: 13,000</p>
+        <button class="add-to-cart" price="13000" value="rtx 3060"> add to cart</button>
+    </div>
+    <div class="item" item-name="rx 580">
+        <img src="rx 580.jpg" class="item-images">
+        <p class="item-text"> rx 580</p>
+        <p class="item-text"> price: 10,000</p>
+        <button class="add-to-cart" price="10000" value="rx 580"> add to cart</button>
+    </div>
+    <div class="item" item-name="rx 6600">
+        <img src="rx 6600.jpg" class="item-images">
+        <p class="item-text"> rx 6600</p>
+        <p class="item-text"> price: 20000</p>
+        <button class="add-to-cart" price="20000" value="rx 6600"> add to cart</button>
+    </div>
+    <div class="item" item-name="rx 7500">
+        <img src="rx 7500.jpg" class="item-images">
+        <p class="item-text"> rx 7500</p>
+        <p class="item-text"> price: 35000</p>
+        <button class="add-to-cart" price="35000" value="rx 7500"> add to cart</button>
+    </div>
+    <div class="item" item-name="gtx 1050ti">
+        <img src="gtx 1050ti.jpg" class="item-images">
+        <p class="item-text"> gtx 1050ti</p>
+        <p class="item-text"> price: 7000</p>
+        <button class="add-to-cart" price="7000" value="gtx 1050ti"> add to cart</button>
+    </div>
+    <div class="item" item-name="rx 6750 xt">
+        <img src="rx 6750 xt.jpg" class="item-images">
+        <p class="item-text"> rx 6750 xt</p>
+        <p class="item-text"> price: 19000</p>
+        <button class="add-to-cart" price="19000" value="rx 6750 xt"> add to cart</button>
+    </div>
+    <div class="item" item-name="rtx 2060 super">
+        <img src="rtx 2060 super.jpg" class="item-images">
+        <p class="item-text"> rtx 2060 super</p>
+        <p class="item-text"> price: 10000</p>
+        <button class="add-to-cart" price="10000" value="rtx 2060 super"> add to cart</button>
+    </div>
+    </div>
+</div>
+    <script src="app.js"> </script>
+</body>
+</html>

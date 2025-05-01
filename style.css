@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+    background-color: #F8F2DC;
+}
+.header{
+    width: 100vw;
+}
+.nav-container{
+    width: 100%;
+    height: 7vmin;
+    background-color: rgb(53, 53, 53);
+   
+}
+.nav-list-main{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+   display: flex;
+}
+.nav-list{
+    margin-right: 4rem;
+}
+.nav-anchor{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition-duration: 1s;
+}
+.nav-anchor:hover{
+    color: orangered;
+}
+.nav-list:first-child{
+   margin-right: auto;
+   margin-left: 2rem;
+}
+.cart-container{
+    width: 100vw;
+    height: 0px;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.cart{
+    width: 40px;
+    height: 47px;
+    z-index: 1;
+    position: relative;
+    bottom: 3rem;
+    right: 1rem;
+    border: none;
+    background-color: rgb(53, 53, 53);
+    color: white;
+}
+.basket-container{
+    width: 100vw;
+    height: 0;
+    display: flex;
+    justify-content: flex-end;
+    display: none;
+   
+}
+.basket-container.active1{
+    display: flex;
+}
+.basket{
+    width: 250px;
+    height: 300px;
+    background-color:  rgb(53, 53, 53);
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-right: 3rem;
+}
+
+.hamburger{
+    display: none;
+}
+.ham-click{
+    width: 100vw;
+    background-color: black;
+    height: 4vmin;
+    text-align: center;
+    transition-duration: 1s;
+
+}
+.ham-click:hover{
+    background-color: orangered;
+}
+.block{
+    width: 100vw;
+    display: none;
+}
+.ham-text{
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-aspect-ratio: 16/9){
+    .hamburger{
+        display: block;
+        height: 20px;
+        border: none;
+        background-color: rgb(44, 42, 42);
+        color: white;
+    }
+    .nav-list-main{
+        display: none;
+    }
+    .block{
+        display: none;
+    }
+    .block.active{
+        display: block;
+    }
+}
+.slides{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slide{
+    min-width: 100%;
+    height: 500px;
+}
+.slider{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+.controls{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.adjuster{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+#search{
+    width: 250px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 40px;
+}
+#search::placeholder{
+    text-align: center;
+}
+.search-div{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.item{
+    width: 200px;
+    height: 250px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #002A22;
+}
+.item-container{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    
+}
+.container{
+    width: 660px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5vmin;
+    margin-top: 2rem;
+
+}
+.item-images{
+    width: 100%;
+    height: 150px;
+    border-radius: 20px;
+}
+.item-text{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    display: block;
+    
+}
+.add-to-cart{
+    margin-left: 4rem;
+    background-color: orangered;
+    color: white;
+
+}
+.save{
+    width: 100%;
+    height: 60px;
+    background-color: antiquewhite;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    border: 1px dotted black;
+    position: relative;
+    
+}
+.cartimage{
+    width: 100px;
+    height: 60px;
+   
+}
+.delete{
+   width: 35px;
+   height: 35px;
+   border-radius: 50%;
+}
+.total{
+    position: relative;
+    top: 80%;
+    color: white;
+    font-size: 20px;
+    z-index: 1;
+}
+.totalcontainer{
+    display: block;
+    text-align: center;
+   
+}
+#prev{
+    width: 50px;
+    height: 50px;
+    background-color: orangered;
+    color: white;
+}
+
+#next{
+    width: 50px;
+    height: 50px;
+    background-color: orangered;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

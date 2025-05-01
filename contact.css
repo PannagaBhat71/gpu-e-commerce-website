@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("bg.jpg");
+    background-size: cover;
+}
+.card{
+    background-color: rgba(255, 255, 255, 0.226);
+    backdrop-filter: blur(30px);
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+}
+.cardholder{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+}
+p{
+    text-align: left;
+    position: relative;
+    top: 50px;
+    font-size: 20px;
+}
