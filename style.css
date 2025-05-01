@@ -118,6 +118,9 @@ body{
     .block.active{
         display: block;
     }
+    .slider{
+         height: 300px;
+    }
 }
 .slides{
     display: flex;
