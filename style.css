@@ -49,8 +49,9 @@ body{
     height: 47px;
     z-index: 1;
     position: relative;
-    bottom: 1rem;
+    bottom: 3rem;
     right: 1rem;
+    top: 1rem;
     border: none;
     background-color: rgb(53, 53, 53);
     color: white;
